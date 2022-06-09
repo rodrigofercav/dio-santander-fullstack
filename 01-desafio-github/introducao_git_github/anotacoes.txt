@@ -1,0 +1,2 @@
+inclusao de texto para validar o desafio.
+arquivo usado para anotacoes do curso.
