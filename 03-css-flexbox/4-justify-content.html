@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Justify Content</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: flex;
+            margin: 0;
+            max-width: 500px;
+        }
+
+        .item {
+            background-color: greenyellow;
+            color: darkgreen;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flex-start {
+            justify-content: flex-start;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+
+        .space-evenly {
+            justify-content: space-evenly;
+        }
+
+        .column {
+            flex-direction: column;
+            min-height: 200px;
+        }
+
+        .column div {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Justify Content</h1>
+
+    <div>
+        <h2>ROW</h2>
+        
+        <h2>flex-start</h2>
+        <section class="container flex-start">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>flex-end</h2>
+        <section class="container flex-end">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>center</h2>
+        <section class="container center">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>space-between</h2>
+        <section class="container space-between">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>space-around</h2>
+        <section class="container space-around">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>space-evenly</h2>
+        <section class="container space-evenly">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+    </div>
+
+    <div>
+        <h2>COLUMN</h2>
+        
+        <h2>flex-start</h2>
+        <section class="container flex-start column">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>flex-end</h2>
+        <section class="container flex-end column">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>center</h2>
+        <section class="container center column">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>space-between</h2>
+        <section class="container space-between column">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>space-around</h2>
+        <section class="container space-around column">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+
+        <h2>space-evenly</h2>
+        <section class="container space-evenly column">
+            <div class="item">um 1</div>
+            <div class="item">dois 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item"> opcao 5</div>
+        </section>
+    </div>
+</body>
+
+</html>
