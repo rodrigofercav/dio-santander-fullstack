@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Shrink</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid greenyellow;
+            max-width: 400px;
+            margin-bottom: 25px;
+        }
+
+        .item {
+            margin: 5px;
+            background-color: aqua;
+            color: darkblue;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .fs-1 {
+            flex-shrink: 1;
+        }
+
+        .fs-0 {
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .fs-2 {
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .fs-3 {
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+
+        .fg-0 {
+            flex-grow: 0;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+
+        .fg-2 {
+            flex-grow: 2;
+        }
+
+        .fg-3 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Shrink</h1>
+
+    <h2>flex-shrink: 1</h2>
+    <div class="container">
+        <div class="item fs-1 fg-1">A</div>
+        <div class="item fs-1 fg-1">B</div>
+        <div class="item fs-1 fg-1">C</div>
+        <div class="item fs-1 fg-1">D</div>
+        <div class="item fs-1 fg-1">E</div>
+    </div>
+
+    <div class="container">
+        <div class="item fs-1 fg-1">A</div>
+        <div class="item fs-1 fg-1">Rodrigo Ferreira Cavalcante</div>
+        <div class="item fs-1 fg-1">C</div>
+        <div class="item fs-1 fg-1">D</div>
+        <div class="item fs-1 fg-1">E</div>
+    </div>
+
+    <h2>flex-shrink: 0 + basis: 100px</h2>
+    <div class="container">
+        <div class="item fs-0 fg-1">A</div>
+        <div class="item fs-0 fg-1">Rodrigo Ferreira Cavalcante</div>
+        <div class="item fs-0 fg-2">C</div>
+        <div class="item fs-0 fg-1">D</div>
+        <div class="item fs-0 fg-1">E</div>
+    </div>
+
+    <h2>flex-shrink: mix + basis: 100px</h2>
+    <div class="container">
+        <div class="item fs-1 fg-1">A</div>
+        <div class="item fs-2 fg-1">Rodrigo Cavalcante</div>
+        <div class="item fs-2 fg-1">C</div>
+        <div class="item fs-3 fg-1">D</div>
+    </div>
+</body>
+
+</html>

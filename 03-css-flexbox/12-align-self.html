@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self</title>
+    <style>
+        .container {
+            max-width: 350px;
+            border: 2px solid green;
+            margin-bottom: 30px;
+            display: flex;
+            /* align-items: center; */
+            max-height: 200px;
+        }
+
+        .align-container {
+            align-items: center;
+        }
+
+        .item {
+            background-color: cadetblue;
+            color: blue;
+            font-size: 25px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start {
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Align Self</h1>
+
+    <h2>** ROW **</h2>
+    <h2>auto</h2>
+    <section class="container align-container">
+        <div class="item auto">Rodigo 123</div>
+        <div class="item auto">Dri</div>
+        <div class="item auto">Go</div>
+        <div class="item auto">Rodrigo Ferreira Cavalcante</div>
+    </section>
+
+    <h2>mix</h2>
+    <section class="container align-container">
+        <div class="item stretch">Rodigo</div>
+        <div class="item start">Dri</div>
+        <div class="item end">Go</div>
+        <div class="item auto">Rodrigo Ferreira Cavalcante</div>
+    </section>
+
+    <h2>mix com estouro do container</h2>
+    <section class="container">
+        <div class="item center">Rodrigo Ferreira Cavalcante </div>
+        <div class="item start">Rodrigo Ferreira Cavalcante </div>
+        <div class="item end">Rodrigo Rodrigo Ferreira Cavalcante </div>
+        <div class="item stretch">Rodrigo Ferreira Cavalcante Rodrigo Ferreira Cavalcante </div>
+    </section>
+
+    <h2>** COLUMN **</h2>
+    <h2>auto</h2>
+    <section class="container align-container column">
+        <div class="item auto">Rodigo 123</div>
+        <div class="item auto">Dri</div>
+        <div class="item auto">Go</div>
+        <div class="item auto">Rodrigo Ferreira Cavalcante</div>
+    </section>
+
+    <h2>mix</h2>
+    <section class="container align-container column">
+        <div class="item stretch">Rodigo</div>
+        <div class="item start">Dri</div>
+        <div class="item end">Go</div>
+        <div class="item auto">Rodrigo Ferreira Cavalcante</div>
+    </section>
+
+    <h2>mix com estouro do container</h2>
+    <section class="container column">
+        <div class="item center">Rodrigo Ferreira Cavalcante </div>
+        <div class="item start">Rodrigo Ferreira Cavalcante </div>
+        <div class="item end">Rodrigo Ferreira Cavalcante </div>
+        <div class="item stretch">Rodrigo Ferreira Cavalcante Rodrigo Ferreira Cavalcante Rodrigo Ferreira Cavalcante Rodrigo Ferreira Cavalcante </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Order</title>
+    <style>
+        .container {
+            display: flex;
+            max-width: 400px;
+            border: 2px solid green;
+            margin-bottom: 30px;
+        }
+
+        .item {
+            flex: 1;
+            background-color: burlywood;
+            color: brown;
+            text-align: center;
+            font-size: 25px;
+            margin: 5px;
+        }
+
+        .o-2 {
+            order: -1;
+        }
+
+        .o-1 {
+            order: -1;
+        }
+
+        .o0 {
+            order: 0;
+        }
+
+        .o1 {
+            order: 1;
+        }
+
+        .o2 {
+            order: 2;
+        }
+
+        .o3 {
+            order: 3;
+        }
+
+        .o4 {
+            order: 4;
+        }
+
+        .direction {
+            flex-direction: column;
+        }
+
+        .r-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .c-reverse {
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Order</h1>
+
+    <h2>** ROW **</h2>
+    <h2>order: 0 /*sem usar propriedade*/</h2>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>order: diferentes</h2>
+    <div class="container">
+        <div class="item o4">1</div>
+        <div class="item o2">2</div>
+        <div class="item o-2">-2</div>
+        <div class="item o3">3</div>
+        <div class="item o1">4</div>
+        <div class="item o0">zero</div>
+        <div class="item o-1">-1</div>
+    </div>
+
+    <h2>order: diferentes + row-reverse</h2>
+    <div class="container r-reverse">
+        <div class="item o4">1</div>
+        <div class="item o2">2</div>
+        <div class="item o-2">-2</div>
+        <div class="item o3">3</div>
+        <div class="item o1">4</div>
+        <div class="item o0">zero</div>
+        <div class="item o-1">-1</div>
+    </div>
+
+    <h2>** COLUMN **</h2>
+
+    <h2>order: 0 /*sem usar propriedade*/</h2>
+    <div class="container direction">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>order: diferentes</h2>
+    <div class="container direction">
+        <div class="item o4">1</div>
+        <div class="item o2">2</div>
+        <div class="item o-2">-2</div>
+        <div class="item o3">3</div>
+        <div class="item o1">4</div>
+        <div class="item o0">zero</div>
+        <div class="item o-1">-1</div>
+    </div>
+
+    <h2>order: diferentes + column-reverse</h2>
+    <div class="container c-reverse">
+        <div class="item o4">1</div>
+        <div class="item o2">2</div>
+        <div class="item o-2">-2</div>
+        <div class="item o3">3</div>
+        <div class="item o1">4</div>
+        <div class="item o0">zero</div>
+        <div class="item o-1">-1</div>
+    </div>
+</body>
+
+</html>
